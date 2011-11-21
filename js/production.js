@@ -23,4 +23,12 @@ $(function(){
 	$('#affExempleJRSSFeedAggregator').click(function(){
 		$('#JRSSFeedAggregator').slideToggle('slow');
 	});
+	
+	$('#affExempleLesCreasDeSab').click(function(){
+		$('#LesCreasDeSab').slideToggle('slow');
+	});
+	
+	$('#affExemplePavagePlan').click(function(){
+		$('#PavagePlan').slideToggle('slow');
+	});
 });
