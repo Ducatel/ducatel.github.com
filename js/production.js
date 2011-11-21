@@ -31,4 +31,16 @@ $(function(){
 	$('#affExemplePavagePlan').click(function(){
 		$('#PavagePlan').slideToggle('slow');
 	});
+
+	 $('#affExempleCRC').click(function(){
+		$('#CRC').slideToggle('slow');
+	});
+
+	 $('#affExemplecodageReseau').click(function(){
+		$('#codageReseau').slideToggle('slow');
+	});
+
+	 $('#affExempleRoutage').click(function(){
+		$('#Routage').slideToggle('slow');
+	});
 });
