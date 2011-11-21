@@ -10,12 +10,15 @@
 		<meta name="REVISIT-AFTER" content="7 days" />
 		<meta http-equiv="Content-Language" content="fr" />
 		<link rel="icon" type="image/png" href="./img/favicon.png" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/fonction.js"></script>
+		<script type="text/javascript" src="./js/index.js"></script>
 	<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /><![endif]--> 
 	</head>
 	<body>
 		<div id="header">
 			<p>
-				David Ducatel <span style="float:right;margin-right:15px;"> 1<sup>er</sup> Juillet 1988 -- 23 ans<br/>Le Havre</span><br/>
+				David Ducatel <span style="float:right;margin-right:15px;"> 1<sup>er</sup> Juillet 1988 -- <span id='ageCourantTitre'></span> ans<br/>Le Havre</span><br/>
 				Master Informatique
 			</p>
 		</div>
@@ -51,7 +54,7 @@
 		<div id='centre'>
 			<div id='accueil'>
 				<p id='first' style='text-indent:0px;'>
-					Bonjour et bienvenue sur mon site pr&eacute;sentant mon curriculum  vitae. Je m'appelle David Ducatel j'ai actuellement 23 ans, je suis ing&eacute;nieur en informatique gr&acirc;ce &agrave; mon Master informatique (vous pouvez consulter l'ensemble de mon cursus en suivant ce <a href='formation.html' >lien vers la rubrique Formation</a> ). Poss&eacute;dant une double comp&eacute;tence (informatique et m&eacute;canique via mon BTS M&eacute;canique et Automatismes industriels), je suis capable de m'adapter facilement &agrave; une multitude de situation.
+					Bonjour et bienvenue sur mon site pr&eacute;sentant mon curriculum  vitae. Je m'appelle David Ducatel j'ai actuellement <span id='ageCourantAcc'></span> ans, je suis ing&eacute;nieur en informatique gr&acirc;ce &agrave; mon Master informatique (vous pouvez consulter l'ensemble de mon cursus en suivant ce <a href='formation.html' >lien vers la rubrique Formation</a> ). Poss&eacute;dant une double comp&eacute;tence (informatique et m&eacute;canique via mon BTS M&eacute;canique et Automatismes industriels), je suis capable de m'adapter facilement &agrave; une multitude de situation.
 				</p>
 
 				<p>

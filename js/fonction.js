@@ -1,50 +1,53 @@
 
+$(function(){
+	$('#ageCourantTitre').html(getAge());
+});
+
 /**
- * Fonction qui permet d'afficher ou de cacher une div
+ * Fonction qui calcul mon age courant
+ * @return mon age
  */
-function afficheCacheDiv(idDiv){
-	if(document.getElementById(idDiv).style.display!='none'){ // si la div n'est pas caché
-		Effect.BlindUp(idDiv);
-	}
-	else{ // si la div est caché
-		Effect.BlindDown(idDiv);
-	}
-}
-
-function getWindowHeight() {
-	var windowHeight = 0;
-	if (typeof(window.innerHeight) == 'number') {
-		windowHeight = window.innerHeight;
-	}
-	else {
-		if (document.documentElement && document.documentElement.clientHeight) {
-			windowHeight = document.documentElement.clientHeight;
-		}
-		else {
-			if (document.body && document.body.clientHeight) {
-				windowHeight = document.body.clientHeight;
+function getAge(){
+	actu=new Date();
+	var moisNaiss='07';
+	var jourNaiss='01';
+	var anneeNaiss='1988';
+	if((actu.getMonth()+1)>=moisNaiss){
+		if((actu.getMonth()+1)==moisNaiss){
+			if(actu.getDate()>=jourNaiss){
+				mois=(actu.getMonth()+1)-moisNaiss;
+				ans=actu.getFullYear()-anneeNaiss;
+			}
+			else
+			{
+				mois=(12-moisNaiss)+(actu.getMonth()+1);
+				ans=actu.getFullYear()-anneeNaiss-1;
 			}
 		}
-	}
-	return windowHeight;
-}
-
-
-function setFooter() {
-	if (document.getElementById) {
-		var windowHeight = getWindowHeight();
-		if (windowHeight > 0) {
-			var contentHeight = document.getElementById('centre').offsetHeight;
-			var footerElement = document.getElementById('footer');
-			var footerHeight  = footerElement.offsetHeight;
-			if (windowHeight - (contentHeight + footerHeight) >= 0) {
-				footerElement.style.position = 'relative';
-				footerElement.style.top = (windowHeight - (contentHeight + footerHeight)) + 'px';
-			}
-			else {
-				footerElement.style.position = 'static';
-			}
+		else
+		{
+			mois=(actu.getMonth()+1)-moisNaiss;
+			ans=actu.getFullYear()-anneeNaiss;
 		}
 	}
-}
+	else{
+		mois=(12-moisNaiss)+(actu.getMonth()+1);
+		ans=actu.getFullYear()-anneeNaiss-1;
+	}
+	if(actu.getDate()>jourNaiss)
+	jours=actu.getDate()-jourNaiss;
+	else
 
+	jours=(30-jourNaiss)+(actu.getDate());
+
+	while(jours>30){
+	jours-=30;
+	mois+=1;
+	}
+	while(mois>12){
+	mois-=12;
+	ans+=1;
+	}
+	
+	return ans;
+}
