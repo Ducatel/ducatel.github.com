@@ -1,0 +1,168 @@
+body{
+	/*width:1000px;*/
+	margin:auto;
+}
+
+.separateur{
+	border-color:#333333;
+	width: 200px;
+	margin-left:0px;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:visited{
+	color:blue;
+}
+
+pre{
+	background-color:#333333;
+	padding:10px;
+	color:#cccccc;
+}
+
+/**************** header ******************/
+#header{
+	background-color:#333333;
+}
+
+#header p{
+	color: white;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:10px;
+	padding-bottom:5px;
+}
+
+/**************** Menu *********************/
+#divMenu{
+	text-align:center;
+	background-image:url("./img/menu.jpg");
+	background-repeat:repeat-x;
+}
+
+#divMenu table{
+	margin-top:10px;
+
+}
+
+#divMenu td{
+	border-right:1px solid gray;
+	padding-left:15px;
+	padding-right:5px;
+	color:gray;
+	cursor:pointer;
+	
+}
+
+#divMenu td:hover{
+	color:white;
+	border-right:1px solid white;
+}
+
+#divMenu a{
+	display:block;
+	width:100%; 
+	height: 100%;
+	padding:2px;
+	color:#cccccc;
+}
+
+#divMenu a:hover{
+	color:white;
+}
+
+#divMenu #actif{
+	font-style:italic;
+}
+
+#divMenu hr{
+	height:1px;
+	margin-top:0px;
+	padding-top:0px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+
+#ss_menu{
+	background-image:url("./img/ss_menu.jpg");
+	background-repeat:repeat-x;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+}
+
+#ss_menu img{
+	margin-top: 10px;
+}
+
+
+/*************** CENTRE ***************/
+#centre{
+	padding-left:10%;
+}
+
+/***************** FOOTER ************/
+#footer{
+	width: 100%;
+	background-color:#333333;
+	color:#cccccc;
+}
+
+
+#footer p{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/**************** INFORMATIQUE ***********/
+.liNiveau{
+	cursor:wait;
+	width:300px;
+}
+
+/****************** Production *********************/
+.affExemple{
+	color:blue;
+	cursor:pointer;
+}
+
+/******************* Contact **************/
+#divContact{
+	width:700px;
+	margin:auto;
+}
+
+#divContact div{
+	text-align:center;
+}
+
+.valider{
+	background-image: url("./img/bouton_valider.png");
+	background-repeat:repeat-x;
+	border:none;
+	color:white;
+	font-weight:bold;
+	cursor:pointer;
+	border:1px solid #888888;
+}
+
+/*************** Accueil *****************/
+#accueil{
+	width:1000px;
+	margin:auto;
+	text-align:justify;
+}
+
+#accueil p{
+	text-indent:15px;
+}
+
+#first:first-letter{
+    float: left;
+    font-size: 3em;
+    line-height: 1;
+    margin-right: 0.2em;
+}
