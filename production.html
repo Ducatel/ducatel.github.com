@@ -1,342 +1,358 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
-	<head>
-		<title>Ducatel David</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="./style.css" />
-		<meta name="description" content="Site Curiculumn Vitae" />
-		<meta name="keywords" content="CV,Curriculumn,Vitae" />
-		<meta name="robots" content="index,follow,all" />
-		<meta name="REVISIT-AFTER" content="7 days" />
-		<meta http-equiv="Content-Language" content="fr" />
-		<link rel="icon" type="image/png" href="./img/favicon.png" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script type="text/javascript" src="./js/fonction.js"></script>
-		<script type="text/javascript" src="./js/production.js"></script>
-	<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /><![endif]--> 
-	</head>
-	<body>
-		<div id="header">
-			<p>
-				David Ducatel <span style="float:right;margin-right:15px;"> 1<sup>er</sup> Juillet 1988 -- <span id='ageCourantTitre'></span> ans<br/>Le Havre</span><br/>
-				Master Informatique
-			</p>
-		</div>
-		<div id='divMenu'>
+  <head>
+	 <title>Ducatel David</title>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	 <link rel="stylesheet" media="screen" type="text/css" title="Design" href="./style.css" />
+	 <link rel="stylesheet" media="screen" type="text/css" href="./jqueryUI.css" />
+	 <meta name="description" content="Site Curiculumn Vitae" />
+	 <meta name="keywords" content="CV,Curriculumn,Vitae" />
+	 <meta name="robots" content="index,follow,all" />
+	 <meta name="REVISIT-AFTER" content="7 days" />
+	 <meta http-equiv="Content-Language" content="fr" />
+	 <link rel="icon" type="image/png" href="./img/favicon.png" />
+	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+	 <script type="text/javascript" src="./js/fonction.js"></script>
+	 <script type="text/javascript" src="./js/production.js"></script>
+	 <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /><![endif]-->
+  </head>
+  <body>
+	 <div id="header">
+		<p>
+		  David Ducatel <span style="float:right;margin-right:15px;"> 1<sup>er</sup> Juillet 1988 -- <span id='ageCourantTitre'></span> ans<br/>Le Havre</span><br/>
+		  Master Informatique
+		</p>
+	 </div>
+	 <div id='divMenu'>
 		<table>
-			<tr>
-				<td>
-					<a href='index.html'>Accueil</a>
-				</td>
-				<td>
-					<a href='formation.html'>Formation</a>
-				</td>
-				<td>
-					<a href='experience.html'>Exp&eacute;rience</a>
-				</td>
-				<td>
-					<a href='informatique.html'>Comp&eacute;tences</a>
-				</td>
-				<td>
-					<a href='production.html' id='actif'>Production</a>
-				</td>
-				<td>
-					<a href='contact.html'>Contact</a>
-				</td>
-			</tr>
+		  <tr>
+			 <td>
+				<a href='index.html'>Accueil</a>
+			 </td>
+			 <td>
+				<a href='formation.html'>Formation</a>
+			 </td>
+			 <td>
+				<a href='experience.html'>Exp&eacute;rience</a>
+			 </td>
+			 <td>
+				<a href='informatique.html'>Comp&eacute;tences</a>
+			 </td>
+			 <td>
+				<a href='production.html' id='actif'>Production</a>
+			 </td>
+		  </tr>
 		</table>
 		<hr/>
-		</div>
-		<div id='ss_menu'>
-			<img src='./img/linux2.png' alt='Image de presentation' /> 
-			<img src='./img/linux.png' alt='Image de presentation' /> 
-		</div>
-		<div id='centre'>
-<p>
-	Vous trouverez ici, tous les projets open source sur lequels j'ai travaill&eacute; ainsi que quelque site web:</p>
-	<!-- ########################################################## -->
-	
-	<hr class='separateur' />
-	<p><b>Site web lescreasdesab.fr :</b></p>
-	<ul>
-		<li>Devellop&eacute; en PHP5 </li>
-		<li>Utilisation massive de la librairie JQuery</li>
-		<li>En production</li>
-	</ul>
-	<a href="http://www.lescreasdesab.fr">Lien vers lescreasdesab.fr</a><br/>
-	<span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleLesCreasDeSab'>ScreenShot</span>
-	<div id='LesCreasDeSab' style="display:none;"><br/>
-		<img  src="./img/lescreasdesab.jpg" alt="Screenshot du site web www.lescreasdesab.fr" />
-	</div><br/><br/>
-	
-	<!-- ########################################################## -->
-
-	<hr class='separateur' />
-
-	<p><b>G&eacute;n&eacute;rateur de captcha:</b></p>
-	<ul>
-		<li>Devellop&eacute; en PHP5 </li>
-		<li>Basé sur la librairie graphique GD</li>
-		<li>Simple &agrave; utiliser</li>
-	</ul>
-	
-	<a href="./Soft/captcha/captcha.zip">T&eacute;l&eacute;charger les sources</a><br/>
-	<span class='affExemple' title="Cliquer ici pour afficher l'exemple d'impl&eacute;mentation" id='affImplCaptcha'>Exemple d'impl&eacute;mentation</span>
-	<div id='divCaptchaImpl' style="display:none;"><br/>
-		<i>Page d'insertion du Captcha:</i><br/>
-<pre>
-
-&lt;?php
-// A mettre avant toute sortie HTML
-session_start(); 
-?&gt;
-//Formulaire du captcha
-&lt;form method=&quot;post&quot; action=&quot;traitement.php&quot;&gt;
-
-	// Pour generer le captcha, il suffit de mettre captcha.php dans une balise image
-	&lt;img src=&quot;captcha.php&quot; alt=&quot;Captcha&quot; id=&quot;captcha&quot; 
-	onclick=&quot;document.images.captcha.src=&#039;captcha.php?id=&#039;+Math.round(Math.random(0)*1000)+1&quot; 
-	title=&quot;Cliquer pour changer d&#039;image&quot; style=&quot;cursor:pointer;&quot; /&gt;
-	&lt;p&gt;
-	  &lt;label for=&quot;userCode&quot;&gt;Entrez le code:&lt;/label&gt;
-	  &lt;input name=&quot;userCode&quot; id=&quot;userCode&quot; type=&quot;text&quot; /&gt;
-	  &lt;input type=&quot;submit&quot; name=&quot;submit&quot; id=&quot;submit&quot; value=&quot;Valider&quot; /&gt;
-	&lt;/p&gt;
-&lt;/form&gt;		
-</pre>
-
-	<i>Page de traitement:</i><br/>
-<pre>
-&lt;?php
-session_start();
-
-// si l&#039;utilisateur a bien tappe un code
-if (!empty($_POST[&#039;userCode&#039;])){
-
-	//Convertion du texte est majuscule
-	$userCode = strtoupper($_POST[&#039;userCode&#039;]);
-
-	// Comparaison du code
-	if( md5($userCode) == $_SESSION[&#039;captcha&#039;] )
-	  echo &#039;&lt;h2 class=&quot;correct&quot;&gt;Correct !&lt;/h2&gt;&#039;; // Le code est bon
-	else 
-		echo &#039;&lt;h2 class=&quot;incorrect&quot;&gt;Incorrect recommencez !&lt;/h2&gt;&#039;; // Le code est erron&eacute;
-}
-else 
-	echo &#039;&lt;h2&gt;Veuillez entrer le code&lt;/h2&gt;&#039;; // ici aucun code detecte
-
-?&gt;
-
-</pre>
-	</div><br/><br/>
-
-	<!-- ########################################################## -->
-
-	<hr class='separateur' />
-
-	<b>Script de compression ZIP d'arborescence:</b><br/>
-	<ul>
-		<li>Devellop&eacute; en PHP5 </li>
-		<li>Basé sur l'extension ZIP de PHP5</li>
-		<li>Simple &agrave; utiliser</li>
-	</ul>
-	<a href="./Soft/BackupZip/archiveZip.zip">T&eacute;l&eacute;charger les sources</a><br/>
-	<span class='affExemple' title="Cliquer ici pour afficher l'exemple d'impl&eacute;mentation" id='affImplZip'>Exemple d'impl&eacute;mentation</span>
-	<div id='divBackupZipImpl' style="display:none;"><br/>
-<pre>
-&lt;?php
-
-// Inclusion de la class d'archivage 
-include('ZipBackup.php');
-
-// Le chemin vers l'arborescence
-$dossier=&quot;./dossier&quot;;
-
-//Nom de l'archive
-$archive=date('d-m-Y').&quot;.zip&quot;;
-
-// Envoie des header pour le telechargement de l'archove
-header('Content-Type: application/x-zip');
-header(&quot;Content-Disposition: attachment; filename=&quot;.$archive);
-
-// Creation de l'objet archive
-$zip=new ZipBackup($archive);
-
-// Compression du dossier
-$zip-&gt;addRecursive($dossier);
-
-// Fermeture de l'archive
-$zip-&gt;close();
-
-// Envoie de l'archive
-readfile($archive);
-
-?&gt;	
-</pre>
-
-	</div><br/><br/>
-
-	<!-- ########################################################## -->
-
-	<hr class='separateur' />
-	<b>G&eacute;n&eacute;rateur de squelette de class C++ (Skeleton Class Generator):</b><br/>
-	<ul>
-		<li>Devellop&eacute; en C++ </li>
-		<li>Interface graphique QT </li>
-		<li>Permet au d&eacute;veloppeur de g&eacute;n&eacute;rer rapidement le squelette d'un classe C++ </li>
-		<li>Compatible Windows et Linux</li>
-	</ul>
-	
-	<a href="./Soft/skeletonClassGenerator/skeletonClassGenerator.zip">T&eacute;l&eacute;charger l'ex&eacute;cutable windows</a><br/>
-	<a href="https://github.com/Ducatel/Skeleton-class-generator">T&eacute;l&eacute;charger les sources</a><br/>
-
-	<span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleSkeletonClassGenerator'>ScreenShot</span>
-	<div id='SkeletonClassGenerator' style="display:none;"><br/>
-		<img  src="./img/skeletonclassgenerator.png" alt="Screenshot du logiciel Skeleton Class Generator" />
-	</div><br/><br/>
-
-	<!-- ########################################################## -->
-
-	<hr class='separateur' />
-	<b>Testeur d'int&eacute;grit&eacute; de fichier (File Integrity Checker):</b><br/>
-	<ul>
-		<li>Devellop&eacute; en C++ </li>
-		<li>Interface graphique QT </li>
-		<li>Permet de tester l'int&eacute;grit&eacute; d'un fichier en fonction de son hash MD4, MD5 ou SHA1</li>
-		<li>Fonctionne avec le drag and drop de fichier</li>
-		<li>Compatible Windows et Linux</li>
-	</ul>
-	
-	<a href="./Soft/fileIntegrityChecker/fileIntegrityChecker.zip">T&eacute;l&eacute;charger l'ex&eacute;cutable windows</a><br/>
-	<a href="https://github.com/Ducatel/FileIntegrityChecker">T&eacute;l&eacute;charger les sources</a><br/>
-
-	<span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleFileIntegrityChecker'>ScreenShot</span>
-	<div id='FileIntegrityChecker' style="display:none;"><br/>
-		<img  src="./img/FileIntegrityChecker.jpg" alt="Screenshot du logiciel File Integrity Checker" />
-	</div><br/><br/>
-
-	<!-- ########################################################## -->
-
-	<hr class='separateur' />
-	<b>Arret programm&eacute; (QShutdown):</b><br/>
-	<ul>
-		<li>Devellop&eacute; en C++ </li>
-		<li>Interface graphique QT </li>
-		<li>Permet d'arreter une machine à une heure pr&eacute;cise ou apr&egrave;s un certain d&eacute;lai</li>
-		<li>Compatible Windows et Linux (doit etre lanc&eacute; en root sous Linux)</li>
-	</ul>
-	
-	<a href="./Soft/QShutdown/QShutdown.zip">T&eacute;l&eacute;charger l'ex&eacute;cutable windows</a><br/>
-	<a href="https://github.com/Ducatel/QShutdown">T&eacute;l&eacute;charger les sources</a><br/>
-
-	<span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleQShutdown'>ScreenShot</span>
-	<div id='QShutdown' style="display:none;"><br/>
-		<img  src="./img/QShutdown.jpg" alt="Screenshot du logiciel QShutdown" />
-	</div><br/><br/>
-
-	<!-- ########################################################## -->
-	
-	<hr class='separateur' />
-	<b>Aggregateur de flux RSS/Atom (JRSSFeedAggregator):</b><br/>
-	<ul>
-		<li>Devellop&eacute; en Java </li>
-		<li>Permet de suivre plusieurs flux RSS/Atom facilement</li>
-		<li>Compatible Windows</li>
-	</ul>
-	
-	<a href="https://github.com/Ducatel/JRSSFeedAggregator">T&eacute;l&eacute;charger les sources</a><br/>
-
-	<span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleJRSSFeedAggregator'>ScreenShot</span>
-	<div id='JRSSFeedAggregator' style="display:none;"><br/>
-		<img  src="./img/JRSSFeedAggregator.jpg" alt="Screenshot du logiciel JRSSFeedAggregator" />
-	</div><br/><br/>
-	
-	<!-- ########################################################## -->
-	<hr class='separateur' />
-	<b>Démonstration d'algorithme avancé :</b><br/>
-	<ul>
-		<li>Devellop&eacute; en Java </li>
-		<li>Démonstration d'algorithme avancé sur un problème de pavage du plan</li>
-		<li>Résolution aléatoire, par backtracking, par recuit simulé</li>
-		<li>Utilisation du multiThreading pour uniformisé les temps de résolution</li>
-		<li>Utilisation de base de l'API Java Sound</li>
-		<li>Compatible Windows/Linux</li>
-	</ul>
-	
-	<a href="https://github.com/Ducatel/Pavage-du-plan">T&eacute;l&eacute;charger les sources</a><br/>
-
-	<span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExemplePavagePlan'>ScreenShot</span>
-	<div id='PavagePlan' style="display:none;"><br/>
-		<img  src="./img/Polyominos.jpg" alt="Screenshot du logiciel PavagePlan" />
-	</div><br/><br/>
-
-	<!-- ########################################################## -->
-	<hr class='separateur' />
-	<b>Calculateur de CRC :</b><br/>
-	<ul>
-		<li>Devellop&eacute; en Java </li>
-		<li>Application à but pédagogique</li>
-		<li>Calcul autour des CRC utilisé dans les transmitions réseaux</li>
-		<li>Compatible Windows/Linux</li>
-	</ul>
-	
-	<a href="./Soft/CRC/CRC.zip">T&eacute;l&eacute;charger les sources</a><br/>
-
-	<span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleCRC'>ScreenShot</span>
-	<div id='CRC' style="display:none;"><br/>
-		<img  src="./img/crc.png" alt="Screenshot du logiciel CRC" />
-	</div><br/><br/>
-
-	<!-- ########################################################## -->
-	<hr class='separateur' />
-	<b>Codage de données reseau :</b><br/>
-	<ul>
-		<li>Devellop&eacute; en Java </li>
-		<li>Application à but pédagogique</li>
-		<li>Représentation graphique des codage NRZ,NRZI,Manchester,Manchester differentiel,Miller</li>
-		<li>Compatible Windows/Linux</li>
-	</ul>
-	
-	<a href="./Soft/codageReseau/codageReseau.zip">T&eacute;l&eacute;charger les sources</a><br/>
-
-	<span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExemplecodageReseau'>ScreenShot</span>
-	<div id='codageReseau' style="display:none;"><br/>
-		<img  src="./img/codageReseau.png" alt="Screenshot du logiciel de codage reseau" />
-	</div><br/><br/>
-
-	<!-- ########################################################## -->
-	<hr class='separateur' />
-	<b>Calculateur de table de routage :</b><br/>
-	<ul>
-		<li>Devellop&eacute; en Java </li>
-		<li>Application à but pédagogique</li>
-		<li>Application qui permet de calculer les tables de routage d'un réseau</li>
-		<li>Compatible Windows/Linux</li>
-	</ul>
-	
-	<a href="./Soft/Routage/Routage.zip">T&eacute;l&eacute;charger les sources</a><br/>
-
-	<span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleRoutage'>ScreenShot</span>
-	<div id='Routage' style="display:none;"><br/>
-		<img  src="./img/routage.png" alt="Screenshot du logiciel de Routage" />
-	</div><br/><br/>
-
-	<!-- ########################################################## -->
+	 </div>
+	 <div id='ss_menu'>
+		<img src='./img/linux2.png' alt='Image de presentation' />
+		<img src='./img/linux.png' alt='Image de presentation' />
+	 </div>
+	 <div id='centre'>
+		<p>Vous trouverez ici, tous les projets open source sur lequels j'ai travaill&eacute; ainsi que quelque site web:</p>
 
 
-	<hr class='separateur' />
-	<b>Logiciel de micro-comptabilit&eacute; (JCompta): En dévelloppement</b><br/>
-	<ul>
-		<li>Devellop&eacute; en Java 6 SE </li>
-		<li>Permet au artisant de tenir facilement une petite comptabilit&eacute;</li>
-		<li>Permet d'envoyer facilement au comptable une version PDF de leur comptabilit&eacute;</li>
-		<li>Permet d'avoir des statistiques sur diff&eacute;rents points gr&acirc;ce &agrave; des visualisations mensuel et journali&egrave;re</li>
-	</ul>
-	
-	<!-- ########################################################## -->
-	
+		<div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="onglet">
+		  <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+			 <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#Java">Java</a></li>
+			 <li class="ui-state-default ui-corner-top"><a href="#Web">WEB (PHP,Javascript)</a></li>
+			 <li class="ui-state-default ui-corner-top"><a href="#CPP">C/C++</a></li>
+		  </ul>
 
-		</div>
-	</body>
+
+
+		  <!------------------------------------- WEB ------------------------------------>
+			<!-- ########################################################## -->
+		  <div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="Web">
+			 <hr class='separateur' />
+			 <p><b>Site web lescreasdesab.fr :</b></p>
+			 <ul>
+				<li>Devellop&eacute; en PHP5 </li>
+				<li>Utilisation massive de la librairie JQuery</li>
+				<li>En production</li>
+			 </ul>
+			 <a class='lien' href="http://www.lescreasdesab.fr">Lien vers lescreasdesab.fr</a><br/>
+			 <span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleLesCreasDeSab'>ScreenShot</span>
+			 <div id='LesCreasDeSab' style="display:none;"><br/>
+				<img  src="./img/lescreasdesab.jpg" alt="Screenshot du site web www.lescreasdesab.fr" />
+			 </div><br/><br/>
+
+			 <!-- ########################################################## -->
+
+			 <hr class='separateur' />
+
+			 <p><b>G&eacute;n&eacute;rateur de captcha:</b></p>
+			 <ul>
+				<li>Devellop&eacute; en PHP5 </li>
+				<li>Basé sur la librairie graphique GD</li>
+				<li>Simple &agrave; utiliser</li>
+			 </ul>
+
+			 <a class='lien' href="./Soft/captcha/captcha.zip">T&eacute;l&eacute;charger les sources</a><br/>
+			 <span class='affExemple' title="Cliquer ici pour afficher l'exemple d'impl&eacute;mentation" id='affImplCaptcha'>Exemple d'impl&eacute;mentation</span>
+			 <div id='divCaptchaImpl' style="display:none;"><br/>
+				<i>Page d'insertion du Captcha:</i><br/>
+				<pre>
+
+				  &lt;?php
+				  // A mettre avant toute sortie HTML
+				  session_start();
+				  ?&gt;
+				  //Formulaire du captcha
+				  &lt;form method=&quot;post&quot; action=&quot;traitement.php&quot;&gt;
+
+				  // Pour generer le captcha, il suffit de mettre captcha.php dans une balise image
+				  &lt;img src=&quot;captcha.php&quot; alt=&quot;Captcha&quot; id=&quot;captcha&quot;
+				  onclick=&quot;document.images.captcha.src=&#039;captcha.php?id=&#039;+Math.round(Math.random(0)*1000)+1&quot;
+				  title=&quot;Cliquer pour changer d&#039;image&quot; style=&quot;cursor:pointer;&quot; /&gt;
+				  &lt;p&gt;
+				  &lt;label for=&quot;userCode&quot;&gt;Entrez le code:&lt;/label&gt;
+				  &lt;input name=&quot;userCode&quot; id=&quot;userCode&quot; type=&quot;text&quot; /&gt;
+				  &lt;input type=&quot;submit&quot; name=&quot;submit&quot; id=&quot;submit&quot; value=&quot;Valider&quot; /&gt;
+				  &lt;/p&gt;
+				  &lt;/form&gt;
+				</pre>
+
+				<i>Page de traitement:</i><br/>
+				<pre>
+				  &lt;?php
+				  session_start();
+
+				  // si l&#039;utilisateur a bien tappe un code
+				  if (!empty($_POST[&#039;userCode&#039;])){
+
+				  //Convertion du texte est majuscule
+				  $userCode = strtoupper($_POST[&#039;userCode&#039;]);
+
+				  // Comparaison du code
+				  if( md5($userCode) == $_SESSION[&#039;captcha&#039;] )
+				  echo &#039;&lt;h2 class=&quot;correct&quot;&gt;Correct !&lt;/h2&gt;&#039;; // Le code est bon
+				  else
+				  echo &#039;&lt;h2 class=&quot;incorrect&quot;&gt;Incorrect recommencez !&lt;/h2&gt;&#039;; // Le code est erron&eacute;
+				  }
+				  else
+				  echo &#039;&lt;h2&gt;Veuillez entrer le code&lt;/h2&gt;&#039;; // ici aucun code detecte
+
+				  ?&gt;
+
+				</pre>
+			 </div><br/><br/>
+		  
+
+		  <!-- ########################################################## -->
+
+		  <hr class='separateur' />
+
+		  <b>Script de compression ZIP d'arborescence:</b><br/>
+		  <ul>
+			 <li>Devellop&eacute; en PHP5 </li>
+			 <li>Basé sur l'extension ZIP de PHP5</li>
+			 <li>Simple &agrave; utiliser</li>
+		  </ul>
+		  <a class='lien' href="./Soft/BackupZip/archiveZip.zip">T&eacute;l&eacute;charger les sources</a><br/>
+		  <span class='affExemple' title="Cliquer ici pour afficher l'exemple d'impl&eacute;mentation" id='affImplZip'>Exemple d'impl&eacute;mentation</span>
+		  <div id='divBackupZipImpl' style="display:none;"><br/>
+			 <pre>
+				&lt;?php
+
+				// Inclusion de la class d'archivage
+				include('ZipBackup.php');
+
+				// Le chemin vers l'arborescence
+				$dossier=&quot;./dossier&quot;;
+
+				//Nom de l'archive
+				$archive=date('d-m-Y').&quot;.zip&quot;;
+
+				// Envoie des header pour le telechargement de l'archove
+				header('Content-Type: application/x-zip');
+				header(&quot;Content-Disposition: attachment; filename=&quot;.$archive);
+
+				// Creation de l'objet archive
+				$zip=new ZipBackup($archive);
+
+				// Compression du dossier
+				$zip-&gt;addRecursive($dossier);
+
+				// Fermeture de l'archive
+				$zip-&gt;close();
+
+				// Envoie de l'archive
+				readfile($archive);
+
+				?&gt;
+			 </pre>
+
+		  </div><br/><br/>
+		</div><!-- fin div WEB -->
+		<!--------------------------------- C/C++ ---------------------------------------->
+		<div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="CPP">
+		  <!-- ########################################################## -->
+
+		  <hr class='separateur' />
+		  <b>G&eacute;n&eacute;rateur de squelette de class C++ (Skeleton Class Generator):</b><br/>
+		  <ul>
+			 <li>Devellop&eacute; en C++ </li>
+			 <li>Interface graphique QT </li>
+			 <li>Permet au d&eacute;veloppeur de g&eacute;n&eacute;rer rapidement le squelette d'un classe C++ </li>
+			 <li>Compatible Windows et Linux</li>
+		  </ul>
+
+		  <a class='lien' href="./Soft/skeletonClassGenerator/skeletonClassGenerator.zip">T&eacute;l&eacute;charger l'ex&eacute;cutable windows</a><br/>
+		  <a class='lien' href="https://github.com/Ducatel/Skeleton-class-generator">T&eacute;l&eacute;charger les sources</a><br/>
+
+		  <span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleSkeletonClassGenerator'>ScreenShot</span>
+		  <div id='SkeletonClassGenerator' style="display:none;"><br/>
+			 <img  src="./img/skeletonclassgenerator.png" alt="Screenshot du logiciel Skeleton Class Generator" />
+		  </div><br/><br/>
+
+		  <!-- ########################################################## -->
+
+		  <hr class='separateur' />
+		  <b>Testeur d'int&eacute;grit&eacute; de fichier (File Integrity Checker):</b><br/>
+		  <ul>
+			 <li>Devellop&eacute; en C++ </li>
+			 <li>Interface graphique QT </li>
+			 <li>Permet de tester l'int&eacute;grit&eacute; d'un fichier en fonction de son hash MD4, MD5 ou SHA1</li>
+			 <li>Fonctionne avec le drag and drop de fichier</li>
+			 <li>Compatible Windows et Linux</li>
+		  </ul>
+
+		  <a class='lien' href="./Soft/fileIntegrityChecker/fileIntegrityChecker.zip">T&eacute;l&eacute;charger l'ex&eacute;cutable windows</a><br/>
+		  <a class='lien' href="https://github.com/Ducatel/FileIntegrityChecker">T&eacute;l&eacute;charger les sources</a><br/>
+
+		  <span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleFileIntegrityChecker'>ScreenShot</span>
+		  <div id='FileIntegrityChecker' style="display:none;"><br/>
+			 <img  src="./img/FileIntegrityChecker.jpg" alt="Screenshot du logiciel File Integrity Checker" />
+		  </div><br/><br/>
+
+		  <!-- ########################################################## -->
+
+		  <hr class='separateur' />
+		  <b>Arret programm&eacute; (QShutdown):</b><br/>
+		  <ul>
+			 <li>Devellop&eacute; en C++ </li>
+			 <li>Interface graphique QT </li>
+			 <li>Permet d'arreter une machine à une heure pr&eacute;cise ou apr&egrave;s un certain d&eacute;lai</li>
+			 <li>Compatible Windows et Linux (doit etre lanc&eacute; en root sous Linux)</li>
+		  </ul>
+
+		  <a class='lien' href="./Soft/QShutdown/QShutdown.zip">T&eacute;l&eacute;charger l'ex&eacute;cutable windows</a><br/>
+		  <a class='lien' href="https://github.com/Ducatel/QShutdown">T&eacute;l&eacute;charger les sources</a><br/>
+
+		  <span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleQShutdown'>ScreenShot</span>
+		  <div id='QShutdown' style="display:none;"><br/>
+			 <img  src="./img/QShutdown.jpg" alt="Screenshot du logiciel QShutdown" />
+		  </div><br/><br/>
+		</div><!-- fin div C/C++ -->
+		<!--------------------------------- JAVA ---------------------------------------->
+
+		<div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="Java">
+		  <!-- ########################################################## -->
+
+		  <hr class='separateur' />
+		  <b>Aggregateur de flux RSS/Atom (JRSSFeedAggregator):</b><br/>
+		  <ul>
+			 <li>Devellop&eacute; en Java </li>
+			 <li>Permet de suivre plusieurs flux RSS/Atom facilement</li>
+			 <li>Compatible Windows</li>
+		  </ul>
+
+		  <a class='lien' href="https://github.com/Ducatel/JRSSFeedAggregator">T&eacute;l&eacute;charger les sources</a><br/>
+
+		  <span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleJRSSFeedAggregator'>ScreenShot</span>
+		  <div id='JRSSFeedAggregator' style="display:none;"><br/>
+			 <img  src="./img/JRSSFeedAggregator.jpg" alt="Screenshot du logiciel JRSSFeedAggregator" />
+		  </div><br/><br/>
+
+		  <!-- ########################################################## -->
+		  <hr class='separateur' />
+		  <b>Démonstration d'algorithme avancé :</b><br/>
+		  <ul>
+			 <li>Devellop&eacute; en Java </li>
+			 <li>Démonstration d'algorithme avancé sur un problème de pavage du plan</li>
+			 <li>Résolution aléatoire, par backtracking, par recuit simulé</li>
+			 <li>Utilisation du multiThreading pour uniformisé les temps de résolution</li>
+			 <li>Utilisation de base de l'API Java Sound</li>
+			 <li>Compatible Windows/Linux</li>
+		  </ul>
+
+		  <a class='lien' href="https://github.com/Ducatel/Pavage-du-plan">T&eacute;l&eacute;charger les sources</a><br/>
+
+		  <span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExemplePavagePlan'>ScreenShot</span>
+		  <div id='PavagePlan' style="display:none;"><br/>
+			 <img  src="./img/Polyominos.jpg" alt="Screenshot du logiciel PavagePlan" />
+		  </div><br/><br/>
+
+		  <!-- ########################################################## -->
+		  <hr class='separateur' />
+		  <b>Calculateur de CRC :</b><br/>
+		  <ul>
+			 <li>Devellop&eacute; en Java </li>
+			 <li>Application à but pédagogique</li>
+			 <li>Calcul autour des CRC utilisé dans les transmitions réseaux</li>
+			 <li>Compatible Windows/Linux</li>
+		  </ul>
+
+		  <a class='lien' href="./Soft/CRC/CRC.zip">T&eacute;l&eacute;charger les sources</a><br/>
+
+		  <span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleCRC'>ScreenShot</span>
+		  <div id='CRC' style="display:none;"><br/>
+			 <img  src="./img/crc.png" alt="Screenshot du logiciel CRC" />
+		  </div><br/><br/>
+
+		  <!-- ########################################################## -->
+		  <hr class='separateur' />
+		  <b>Codage de données reseau :</b><br/>
+		  <ul>
+			 <li>Devellop&eacute; en Java </li>
+			 <li>Application à but pédagogique</li>
+			 <li>Représentation graphique des codage NRZ,NRZI,Manchester,Manchester differentiel,Miller</li>
+			 <li>Compatible Windows/Linux</li>
+		  </ul>
+
+		  <a class='lien' href="./Soft/codageReseau/codageReseau.zip">T&eacute;l&eacute;charger les sources</a><br/>
+
+		  <span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExemplecodageReseau'>ScreenShot</span>
+		  <div id='codageReseau' style="display:none;"><br/>
+			 <img  src="./img/codageReseau.png" alt="Screenshot du logiciel de codage reseau" />
+		  </div><br/><br/>
+
+		  <!-- ########################################################## -->
+		  <hr class='separateur' />
+		  <b>Calculateur de table de routage :</b><br/>
+		  <ul>
+			 <li>Devellop&eacute; en Java </li>
+			 <li>Application à but pédagogique</li>
+			 <li>Application qui permet de calculer les tables de routage d'un réseau</li>
+			 <li>Compatible Windows/Linux</li>
+		  </ul>
+
+		  <a class='lien' href="./Soft/Routage/Routage.zip">T&eacute;l&eacute;charger les sources</a><br/>
+
+		  <span class='affExemple' title="Cliquer ici pour afficher les screenshots" id='affExempleRoutage'>ScreenShot</span>
+		  <div id='Routage' style="display:none;"><br/>
+			 <img  src="./img/routage.png" alt="Screenshot du logiciel de Routage" />
+		  </div><br/><br/>
+
+		  <!-- ########################################################## -->
+
+
+		  <hr class='separateur' />
+		  <b>Logiciel de micro-comptabilit&eacute; (JCompta): En dévelloppement</b><br/>
+		  <ul>
+			 <li>Devellop&eacute; en Java 6 SE </li>
+			 <li>Permet au artisant de tenir facilement une petite comptabilit&eacute;</li>
+			 <li>Permet d'envoyer facilement au comptable une version PDF de leur comptabilit&eacute;</li>
+			 <li>Permet d'avoir des statistiques sur diff&eacute;rents points gr&acirc;ce &agrave; des visualisations mensuel et journali&egrave;re</li>
+		  </ul>
+
+		  <!-- ########################################################## -->
+		</div><!-- fin div java -->
+	 </div><!-- fin div onglet -->
+  </div>
+</body>
 </html>
-				
+

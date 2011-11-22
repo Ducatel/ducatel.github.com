@@ -1,5 +1,7 @@
 $(function(){
 
+	$( "#onglet" ).tabs();
+
 	$('#affImplCaptcha').click(function(){
 		$('#divCaptchaImpl').slideToggle('slow');
 	});
@@ -43,4 +45,6 @@ $(function(){
 	 $('#affExempleRoutage').click(function(){
 		$('#Routage').slideToggle('slow');
 	});
+	
+	
 });

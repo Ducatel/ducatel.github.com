@@ -1,5 +1,4 @@
 body{
-	/*width:1000px;*/
 	margin:auto;
 }
 
@@ -102,6 +101,8 @@ pre{
 /*************** CENTRE ***************/
 #centre{
 	padding-left:10%;
+	padding-right:10%;
+	margin-top:10px;
 }
 
 /***************** FOOTER ************/
@@ -127,6 +128,10 @@ pre{
 .affExemple{
 	color:blue;
 	cursor:pointer;
+}
+
+.lien{
+	color:hsl(120,100%,33%) !important;
 }
 
 /******************* Contact **************/
