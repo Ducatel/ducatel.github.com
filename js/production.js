@@ -34,15 +34,19 @@ $(function(){
 		$('#PavagePlan').slideToggle('slow');
 	});
 
-	 $('#affExempleCRC').click(function(){
+	$('#affExempleCRC').click(function(){
 		$('#CRC').slideToggle('slow');
 	});
 
-	 $('#affExemplecodageReseau').click(function(){
+	$('#affExemplecodageReseau').click(function(){
 		$('#codageReseau').slideToggle('slow');
 	});
+	
+	$('#affDemocodageReseau').click(function(){
+		$('#demoCodageReseau').slideToggle('slow');
+	});
 
-	 $('#affExempleRoutage').click(function(){
+	$('#affExempleRoutage').click(function(){
 		$('#Routage').slideToggle('slow');
 	});
 	
