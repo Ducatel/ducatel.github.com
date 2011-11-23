@@ -82,7 +82,7 @@ pre{
 
 #divMenu #actif{
 	font-style:italic;
-	text-shadow: 2px 2px 2px red;
+	text-shadow: 2px 2px 2px hsl(204,100%,50%);
 }
 
 #divMenu hr{
