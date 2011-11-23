@@ -5,6 +5,10 @@ $(function(){
 	$('#affImplCaptcha').click(function(){
 		$('#divCaptchaImpl').slideToggle('slow');
 	});
+	
+	$('#affScreenCaptcha').click(function(){
+		$('#divCaptchaScreen').slideToggle('slow');
+	});
 
 	$('#affImplZip').click(function(){
 		$('#divBackupZipImpl').slideToggle('slow');
