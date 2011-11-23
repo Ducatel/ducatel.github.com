@@ -106,48 +106,45 @@
 			 <div id='divCaptchaImpl' style="display:none;"><br/>
 				<i>Page d'insertion du Captcha:</i><br/>
 				<pre>
+&lt;?php
+// A mettre avant toute sortie HTML
+session_start();
+?&gt;
+//Formulaire du captcha
+&lt;form method=&quot;post&quot; action=&quot;traitement.php&quot;&gt;
 
-				  &lt;?php
-				  // A mettre avant toute sortie HTML
-				  session_start();
-				  ?&gt;
-				  //Formulaire du captcha
-				  &lt;form method=&quot;post&quot; action=&quot;traitement.php&quot;&gt;
-
-				  // Pour generer le captcha, il suffit de mettre captcha.php dans une balise image
-				  &lt;img src=&quot;captcha.php&quot; alt=&quot;Captcha&quot; id=&quot;captcha&quot;
-				  onclick=&quot;document.images.captcha.src=&#039;captcha.php?id=&#039;+Math.round(Math.random(0)*1000)+1&quot;
-				  title=&quot;Cliquer pour changer d&#039;image&quot; style=&quot;cursor:pointer;&quot; /&gt;
-				  &lt;p&gt;
-				  &lt;label for=&quot;userCode&quot;&gt;Entrez le code:&lt;/label&gt;
-				  &lt;input name=&quot;userCode&quot; id=&quot;userCode&quot; type=&quot;text&quot; /&gt;
-				  &lt;input type=&quot;submit&quot; name=&quot;submit&quot; id=&quot;submit&quot; value=&quot;Valider&quot; /&gt;
-				  &lt;/p&gt;
-				  &lt;/form&gt;
+	// Pour generer le captcha, il suffit de mettre captcha.php dans une balise image
+	&lt;img src=&quot;captcha.php&quot; alt=&quot;Captcha&quot; id=&quot;captcha&quot;
+	onclick=&quot;document.images.captcha.src=&#039;captcha.php?id=&#039;+Math.round(Math.random(0)*1000)+1&quot;
+	title=&quot;Cliquer pour changer d&#039;image&quot; style=&quot;cursor:pointer;&quot; /&gt;
+	&lt;p&gt;
+		&lt;label for=&quot;userCode&quot;&gt;Entrez le code:&lt;/label&gt;
+		&lt;input name=&quot;userCode&quot; id=&quot;userCode&quot; type=&quot;text&quot; /&gt;
+		&lt;input type=&quot;submit&quot; name=&quot;submit&quot; id=&quot;submit&quot; value=&quot;Valider&quot; /&gt;
+	&lt;/p&gt;
+&lt;/form&gt;
 				</pre>
 
 				<i>Page de traitement:</i><br/>
 				<pre>
-				  &lt;?php
-				  session_start();
+&lt;?php
+session_start();
 
-				  // si l&#039;utilisateur a bien tappe un code
-				  if (!empty($_POST[&#039;userCode&#039;])){
+// si l&#039;utilisateur a bien tappe un code
+if (!empty($_POST[&#039;userCode&#039;])){
 
-				  //Convertion du texte est majuscule
-				  $userCode = strtoupper($_POST[&#039;userCode&#039;]);
+	//Convertion du texte est majuscule
+	$userCode = strtoupper($_POST[&#039;userCode&#039;]);
 
-				  // Comparaison du code
-				  if( md5($userCode) == $_SESSION[&#039;captcha&#039;] )
-				  echo &#039;&lt;h2 class=&quot;correct&quot;&gt;Correct !&lt;/h2&gt;&#039;; // Le code est bon
-				  else
-				  echo &#039;&lt;h2 class=&quot;incorrect&quot;&gt;Incorrect recommencez !&lt;/h2&gt;&#039;; // Le code est erron&eacute;
-				  }
-				  else
-				  echo &#039;&lt;h2&gt;Veuillez entrer le code&lt;/h2&gt;&#039;; // ici aucun code detecte
-
-				  ?&gt;
-
+	// Comparaison du code
+	if( md5($userCode) == $_SESSION[&#039;captcha&#039;] )
+		echo &#039;&lt;h2 class=&quot;correct&quot;&gt;Correct !&lt;/h2&gt;&#039;; // Le code est bon
+	else
+		echo &#039;&lt;h2 class=&quot;incorrect&quot;&gt;Incorrect recommencez !&lt;/h2&gt;&#039;; // Le code est erron&eacute;
+}
+else
+	echo &#039;&lt;h2&gt;Veuillez entrer le code&lt;/h2&gt;&#039;; // ici aucun code detecte
+?&gt;
 				</pre>
 			 </div><br/><br/>
 		  
@@ -166,34 +163,34 @@
 		  <span class='affExemple' title="Cliquer ici pour afficher l'exemple d'impl&eacute;mentation" id='affImplZip'>Exemple d'impl&eacute;mentation</span>
 		  <div id='divBackupZipImpl' style="display:none;"><br/>
 			 <pre>
-				&lt;?php
+&lt;?php
 
-				// Inclusion de la class d'archivage
-				include('ZipBackup.php');
+// Inclusion de la class d'archivage
+include('ZipBackup.php');
 
-				// Le chemin vers l'arborescence
-				$dossier=&quot;./dossier&quot;;
+// Le chemin vers l'arborescence
+$dossier=&quot;./dossier&quot;;
 
-				//Nom de l'archive
-				$archive=date('d-m-Y').&quot;.zip&quot;;
+//Nom de l'archive
+$archive=date('d-m-Y').&quot;.zip&quot;;
 
-				// Envoie des header pour le telechargement de l'archove
-				header('Content-Type: application/x-zip');
-				header(&quot;Content-Disposition: attachment; filename=&quot;.$archive);
+// Envoie des header pour le telechargement de l'archove
+header('Content-Type: application/x-zip');
+header(&quot;Content-Disposition: attachment; filename=&quot;.$archive);
 
-				// Creation de l'objet archive
-				$zip=new ZipBackup($archive);
+// Creation de l'objet archive
+$zip=new ZipBackup($archive);
 
-				// Compression du dossier
-				$zip-&gt;addRecursive($dossier);
+// Compression du dossier
+$zip-&gt;addRecursive($dossier);
 
-				// Fermeture de l'archive
-				$zip-&gt;close();
+// Fermeture de l'archive
+$zip-&gt;close();
 
-				// Envoie de l'archive
-				readfile($archive);
+// Envoie de l'archive
+readfile($archive);
 
-				?&gt;
+?&gt;
 			 </pre>
 
 		  </div><br/><br/>
