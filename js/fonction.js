@@ -25,7 +25,7 @@ function createBanniere(){
 	var nbLigne = 5;
 	
 	// compteur du nombre de ligne
-	var cpt = 0;
+	var cptCycle = 0;
 	
 	
 	// fonction qui va definir un cycle de mouvement des courbes
@@ -52,16 +52,11 @@ function createBanniere(){
 		var taille=ctx.measureText(text);
 		ctx.fillText(text, canvas.width-taille.width-10, 90);
 		
-		/////////////////////// TEST /////////////////////////////
-		
-		
-		/////////////////////////////////////////////////////////
-		
 		// pour chaque ligne que nous voulons tracer
 		for(var j=0; j<nbLigne; ++j) {
 		
 			// calcule d'une marge entre chaque ligne
-			var offset = (cpt+j*10)/20;
+			var offset = (cptCycle+j*10)/20;
 			
 			// calcul de l'épaisseur de la ligne
 			ctx.lineWidth = 1+2*(nbLigne-j); 
@@ -78,9 +73,44 @@ function createBanniere(){
 			ctx.bezierCurveTo(canvas.width/3, cpy1, 2*canvas.width/3, cpy2, canvas.width, y);
 			ctx.stroke();
 		}
-		cpt++;
+		cptCycle++;
 	};
+	
+	// compteur pour l'animation des texte
+	var cptText=0;
+	
+	var animText=function(){
+		
+		var tabText=new Array('PHP/Javascript JQuery','C/C++/QT','JAVA SE/EE');
+		var dec=new Array(0,200,400);
+		var nbText=tabText.length;
+		for(var j=0;j<nbText;j++){
+			ctx.save();
+			var offset = (cptText+j*100)/20;
+			offset+=dec[j];
+			ctx.fillStyle = "hsla(120,50%,50%,0.3)";
+			var y = (Math.sin(offset)+1)*canvas.height/2;
+			ctx.translate(cptText%canvas.width+offset,y);
+			ctx.fillText(tabText[j], 0,0);
+			ctx.restore();
+		}
+		
+		
+		/////////////////// TEMPORAIRE ///////////////////
+		ctx.save();
+		ctx.fillStyle = "hsla(0,70%,50%,0.5)";
+		ctx.translate(cptText+10,55);
+		ctx.fillText("En recherche d'un stage de 4 mois", -100,0);
+		ctx.restore();
+			
+		cptText+=2;
+	};
+	
+	// lancement de l'animation de fond
 	setInterval(cycle, 30);
+	
+	// lancement de l'animation des texte
+	setInterval(animText,30);
 }
 
 /**
