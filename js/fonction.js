@@ -52,6 +52,11 @@ function createBanniere(){
 		var taille=ctx.measureText(text);
 		ctx.fillText(text, canvas.width-taille.width-10, 90);
 		
+		/////////////////////// TEST /////////////////////////////
+		
+		
+		/////////////////////////////////////////////////////////
+		
 		// pour chaque ligne que nous voulons tracer
 		for(var j=0; j<nbLigne; ++j) {
 		
