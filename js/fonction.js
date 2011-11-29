@@ -79,38 +79,28 @@ function createBanniere(){
 	// compteur pour l'animation des texte
 	var cptText=0;
 	
-	var animText=function(){
-		
-		var tabText=new Array('PHP/Javascript JQuery','C/C++/QT','JAVA SE/EE');
-		var dec=new Array(0,200,400);
+	// rendre chaque mot independant
+	var animLangage=function(){
+		var tabText=new Array('PHP','Javascript','JAVA SE/EE','JQuery','C/C++/QT','Python');
 		var nbText=tabText.length;
 		for(var j=0;j<nbText;j++){
 			ctx.save();
-			var offset = (cptText+j*100)/20;
-			offset+=dec[j];
-			ctx.fillStyle = "hsla(120,50%,50%,0.3)";
-			var y = (Math.sin(offset)+1)*canvas.height/2;
-			ctx.translate(cptText%canvas.width+offset,y);
+			ctx.fillStyle = "hsla(120,50%,50%,"+(cptText%canvas.height)/canvas.height+")";
+			var y = cptText%(canvas.height+(j*(-10)));
+			ctx.translate((canvas.width/(tabText.length+1))*(j+1),y);
 			ctx.fillText(tabText[j], 0,0);
 			ctx.restore();
 		}
-		
-		
-		/////////////////// TEMPORAIRE ///////////////////
-		ctx.save();
-		ctx.fillStyle = "hsla(0,70%,50%,0.5)";
-		ctx.translate(cptText+10,55);
-		ctx.fillText("En recherche d'un stage de 4 mois", -100,0);
-		ctx.restore();
-			
-		cptText+=2;
+		cptText+=1;
 	};
+	
+	
 	
 	// lancement de l'animation de fond
 	setInterval(cycle, 30);
 	
 	// lancement de l'animation des texte
-	setInterval(animText,30);
+	setInterval(animLangage,30);
 }
 
 /**
