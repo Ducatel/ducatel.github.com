@@ -81,7 +81,7 @@ function createBanniere(){
 	
 	// rendre chaque mot independant
 	var animLangage=function(){
-		var tabText=new Array('PHP','Javascript','JAVA SE/EE','JQuery','C/C++/QT','Python');
+		var tabText=new Array('Linux','PHP','Javascript','JAVA SE/EE','JQuery','C/C++/QT','Python');
 		var nbText=tabText.length;
 		for(var j=0;j<nbText;j++){
 			ctx.save();
@@ -91,10 +91,18 @@ function createBanniere(){
 			ctx.fillText(tabText[j], 0,0);
 			ctx.restore();
 		}
+		
+		/////////////////// TEMPORAIRE ///////////////////
+		ctx.save();
+		ctx.fillStyle = "hsla(0,70%,50%,0.5)";
+		ctx.translate((cptText*2)%canvas.width+10,55);
+		ctx.fillText("En recherche d'un stage de 4 mois", 0,0);
+		ctx.restore();
+		
 		cptText+=1;
 	};
 	
-	
+
 	
 	// lancement de l'animation de fond
 	setInterval(cycle, 30);
@@ -102,6 +110,8 @@ function createBanniere(){
 	// lancement de l'animation des texte
 	setInterval(animLangage,30);
 }
+
+
 
 /**
  * Fonction qui calcul mon age courant

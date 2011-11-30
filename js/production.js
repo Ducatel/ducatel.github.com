@@ -14,6 +14,10 @@ $(function(){
 		$('#divBackupZipImpl').slideToggle('slow');
 	});
 	
+	$('#affExempleOpenglSalle').click(function(){
+		$('#OpenglSalle').slideToggle('slow');
+	});
+	
 	$('#affExempleSkeletonClassGenerator').click(function(){
 		$('#SkeletonClassGenerator').slideToggle('slow');
 	});
