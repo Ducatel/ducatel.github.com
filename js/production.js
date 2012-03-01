@@ -58,5 +58,8 @@ $(function(){
 		$('#Routage').slideToggle('slow');
 	});
 	
+	$('#affExempleTeXloud').click(function(){
+		$('#TeXloud').slideToggle('slow');
+	});
 	
 });
