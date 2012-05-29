@@ -62,4 +62,12 @@ $(function(){
 		$('#TeXloud').slideToggle('slow');
 	});
 	
+	$('#affExempleLineCounter').click(function(){
+		$('#LineCounter').slideToggle('slow');
+	});
+	
+	$('#affExempleQFacturation').click(function(){
+		$('#QFacturation').slideToggle('slow');
+	});
+	
 });
