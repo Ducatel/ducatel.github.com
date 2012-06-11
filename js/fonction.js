@@ -1,8 +1,9 @@
-
+ï»¿
 $(function(){
-	createBanniere();
-	
-	
+	if ($.browser.msie)
+		alert("Vous utilisez Internet explorer, votre navigateur peux ne pas supportÃ© le couple HTML5/CSS3\nVeuillez utiliser un autre navigateur.")
+	else
+		createBanniere();
 });
 
 /**
@@ -58,13 +59,13 @@ function createBanniere(){
 			// calcule d'une marge entre chaque ligne
 			var offset = (cptCycle+j*10)/20;
 			
-			// calcul de l'épaisseur de la ligne
+			// calcul de l'epaisseur de la ligne
 			ctx.lineWidth = 1+2*(nbLigne-j); 
 			
-			// calcul de l'opacité de la ligne
+			// calcul de l'opacite de la ligne
 			ctx.strokeStyle = 'hsla(204,100%,50%,'+(j/5+0.1)+')'; 
 			
-			// calcul des coordonées de la ligne
+			// calcul des coordonees de la ligne
 			var y = (Math.sin(offset)+1)*canvas.height/2;
 			var cpy1 = (Math.cos(offset)+0.5)*canvas.height;
 			var cpy2 = canvas.height - cpy1;
