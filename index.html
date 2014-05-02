@@ -1,70 +1,711 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
-		<title>Ducatel David</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="./style.css" />
-		<meta name="description" content="Site Curiculumn Vitae" />
-		<meta name="keywords" content="CV,Curriculumn,Vitae" />
-		<meta name="robots" content="index,follow,all" />
-		<meta name="REVISIT-AFTER" content="7 days" />
-		<meta http-equiv="Content-Language" content="fr" />
-		<link rel="icon" type="image/png" href="./img/favicon.png" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script type="text/javascript" src="./js/fonction.js"></script>
-		<script type="text/javascript" src="./js/index.js"></script>
-	<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /><![endif]-->
-	</head>
-	<body>
-		<div id='div_banniere' >
-		</div>
-		<div id='menuGauche'>
-			<div id='titreMenu'>
-				Menu<hr/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>David Ducatel - Free developer - Free Thinker</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery.1.10.1.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="js/vendor/jquery.hashchange.min.js"></script>
+	<script src="js/vendor/jquery.easytabs.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	<style>
+		#langChooser{color:#E74C3C;cursor:pointer; font-weight:bold;}
+		#flagLangChooser{width:32px;position:fixed;top:0px;left:5px;cursor:pointer;}
+		h5{margin-bottom:0px;font-weight:bold;}
+		a{font-weight:bold;}
+	</style>
+	<script src="js/main.js"></script>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+	<![endif]-->
+</head>
+<body class="bg-fixed bg-1">
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+	<![endif]-->
+	<div id='flagLangChooser'>
+		<img src="./images/flag_en.png" alt="English" lang="fr">
+		<img src="./images/flag_fr.png" alt="Français" lang="en">
+	</div>
+	
+
+	
+	<div class="main-container">
+		<div class="main wrapper clearfix">
+			<!-- Header Start -->
+			<header id="header">
+				<div id="logo">
+					<h2>
+						David Ducatel
+					</h2>
+					<h4 lang="fr">Ingénieur informatique</h4>
+					<h4 lang="en">Computer engineer</h4>
+				</div>
+			</header>
+			<!-- Header End -->
+			<!-- Main Tab Container -->
+			<div id="tab-container" class="tab-container">
+				<!-- Tab List -->
+				<ul class='etabs'>
+					<li class='tab' id="tab-about">
+						<a href="#about"><i class="icon-user"></i><span lang="fr"> A propos de moi</span><span lang="en"> About Me</span></a>
+					</li>
+					<li class='tab'>
+						<a href="#resume"><i class="icon-file-text"></i><span lang="fr"> Curriculum vitae</span><span lang="en"> Resume</span></a>
+					</li>
+					<li class='tab'>
+						<a href="#production"><i class="icon-heart"></i><span> Production</span></a>
+					</li>
+					<li class='tab'>
+						<a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
+					</li>
+				</ul>
+				<!-- End Tab List -->
+				<div id="tab-data-wrap">
+					<!-- About Tab Data -->
+					<div id="about">
+						<section class="clearfix">
+							<div class="g2">
+								<div class="photo">
+									<img src="./images/me.png" alt="David Ducatel">
+								</div>
+								<div class="info">
+									<h2>
+										David Ducatel
+									</h2>
+									<h4 lang="fr">Ingénieur informatique</h4>
+									<h4 lang="en">Computer engineer</h4>
+									<p lang="fr" style="font-size:0.95em;text-align : justify;">
+										Passionner d'informatique, je suis toujours à la recherche de nouvelles opportunités d'apprendre.
+										Cette passion pour l'informatique me pousse continuellement à chercher et à connaitre  un grand nombre de technologies.
+										Donc si vous avez un problème, je pourrai surement vous trouvez une solution.
+									</p>
+									<p lang="en" style="font-size:0.95em;text-align : justify;">
+										Passionate of computer, I'm always looking for new opportunities to learn. 
+										This passion for computers continually pushes me to seek and know a large number of technologies. 
+										So if you have a problem, I can probably find you a solution.
+									</p>
+								</div>
+							</div>
+							<div class="g1">
+								<div class="main-links sidebar">
+									<ul>
+										<li>
+											<a href="#resume" lang="en">View My Resume</a>
+											<a href="#resume" lang="fr">Voir mon Curriculum vitae</a>
+										</li>
+										<li>
+											<a href="#production" lang="en">My Productions</a>
+											<a href="#production" lang="fr">Mes productions</a>
+										</li>
+										<li>
+											<a href="#contact" lang="en">Hire me for your next project</a>
+											<a href="#contact" lang="fr">Engagez-moi pour votre prochain projet</a>
+										</li>
+										<li>
+											<a href="#" lang="en" data-toggle="modal" data-target="#schoolProjects">School projects</a>
+											<a href="#" lang="fr" data-toggle="modal" data-target="#schoolProjects">Projets universitaires</a>
+										</li>
+										<li>
+											<a href="#" lang="en" data-toggle="modal" data-target="#leisure">Leisure</a>
+											<a href="#" lang="fr" data-toggle="modal" data-target="#leisure">Loisir</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="break"></div>
+							<div class="contact-info">
+								<div class="g1">
+									<div class="item-box clearfix">
+										<i class="icon-envelope"></i>
+										<div class="item-data">
+											<h3><a href="mailto:david.ducatel@yahoo.fr">david.ducatel@yahoo.fr</a></h3>
+											<p lang="en">Email Address</p>
+											<p lang="fr">Addresse Email</p>
+										</div>
+									</div>
+								</div>
+								<div class="g1">
+									<div class="item-box clearfix">
+										<i class="icon-github"></i>
+										<div class="item-data">
+											<h3><a href="https://github.com/Ducatel">Ducatel</a></h3>
+											<p>Github</p>
+										</div>
+									</div>
+								</div>
+								<div class="g1">
+									<div class="item-box clearfix">
+										<i class="icon-flag"></i>
+										<div class="item-data">
+											<h3 id='langChooser'><span lang="fr">English</span><span lang="en">Français</span></h3>
+											<p lang="en">Website language</p>
+											<p lang="fr">Langue du site</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- content -->
+						
+						<!-- popup div -->
+						<div class="modal fade" id="schoolProjects" tabindex="-1" role="dialog" aria-labelledby="schoolProjectsLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title" id="schoolProjectsLabel" lang="en">School Projects</h4>
+										<h4 class="modal-title" id="schoolProjectsLabel" lang="fr">Projets universitaires</h4>
+									</div>
+									<div class="modal-body">
+										<span lang="en">
+											<p>
+												You can find the sources for these projects on my <a href="https://github.com/Ducatel/ducatel.github.com/tree/master/Soft">GitHub</a>
+											</p>
+											<hr/>
+											<ul>
+												<li><i style='margin-right:10px;'>2012 :</i> Complex algorithms demonstration (Java, backtracking, recuit simulé, multiThreading, etc...)</li>
+												<li><i style='margin-right:10px;'>2012 :</i> Modeling a classroom with openGL(C)</li>
+												<li><i style='margin-right:10px;'>2011 :</i> Creating an installer for Linux Mail Web server for user without knowledge. (Debian)</li>
+												<li><i style='margin-right:10px;'>2010 :</i> Development of a captcha generator (PHP)</li>
+												<li><i style='margin-right:10px;'>2009 :</i> Study  the process of attack and defense for server</li>
+												<li><i style='margin-right:10px;'>2009 :</i> Development of a  Mastermind&copy; in Java.</li>
+												<li><i style='margin-right:10px;'>2007 :</i> Design and construction of a machine for automated production.</li>
+											</ul>
+										</span>
+										<span lang="fr">
+											<p>
+												Vous pouvez trouver les sources de ces projets sur mon <a href="https://github.com/Ducatel/ducatel.github.com/tree/master/Soft">GitHub</a>
+											</p>
+											<hr/>
+											<ul>
+												<li><i style='margin-right:10px;'>2012 :</i> Démonstration d'algorithmes complexe (Java, backtracking, recuit simulé, multiThreading, etc...)</li>
+												<li><i style='margin-right:10px;'>2012 :</i> Modélisation d'une salle de classe avec openGL(C)</li>
+												<li><i style='margin-right:10px;'>2011 :</i> Création d'un installeur de serveur Web Mail Linux pour utilisateur sans connaissance. (Debian)</li>
+												<li><i style='margin-right:10px;'>2010 :</i> Développement d'un générateur de captcha (PHP)</li>
+												<li><i style='margin-right:10px;'>2009 :</i> Etude des processus d'attaque et de defense de serveur</li>
+												<li><i style='margin-right:10px;'>2009 :</i> Développement d'un Mastermind&copy; en Java.</li>
+												<li><i style='margin-right:10px;'>2007 :</i> Conception et réalisation d'une machine de production automatisée.</li>
+											</ul>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="modal fade" id="leisure" tabindex="-1" role="dialog" aria-labelledby="leisureLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title" id="leisureLabel" lang="en">Leisure</h4>
+										<h4 class="modal-title" id="leisureLabel" lang="fr">Loisir</h4>
+									</div>
+									<div class="modal-body">
+										<span lang="en">
+											<p>
+												In addition to computers, I am passionate about astrophysics. Indeed, the universe and its mysteries are for me a source of escape. Wormholes, dark flows and other black hole reminds me of all that remains to be discovered.
+											</p>
+											<p>
+												Medicine, books, piano and automobile are some other things what I like
+											</p>
+										</span>
+										<span lang="fr">
+											<p>
+												En plus de l'informatique, je suis passionner d'astrophysique. En effet, l'univers et ses mystères sont pour moi une source d'évasion. Les trous de vers, flux sombre et autre trou noir me rappel tous ce qu'il reste à découvrir.
+											</p>
+											<p>
+												La médecine, la lecture, le piano et l'automobile sont quelques-unes de c'est autres choses que j'aime.
+											</p>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- End popup div -->
+					</div>
+					<!-- End About Tab Data -->
+					<!-- Resume Tab Data -->
+					<div id="resume">
+						<section class="clearfix">
+							<div class="g2">
+								<h3 lang="en">Work Experience</h3>
+								<h3 lang="fr">Expérience professionnelle</h3>
+								<ul class="no-list work">
+									<li>
+										<h5 lang="en">Engineer Research and Development</h5>
+										<h5 lang="fr">Ingénieure recherche et développement</h5>
+										<span class="label label-danger">2012 - now</span>
+										<p>
+											<dl lang="en">
+												<dt><span class="icon-code" style="float:none;"></span> Roles</dt>
+												<dd>
+													Development of libraries<br/>
+													Management of servers  (WEB, Nagios, Hudson, SQL)<br/>
+													Management of tools used by developers<br/>
+													Code quality management<br/>
+												</dd>
+												
+												<dt><span class="icon-tasks" style="float:none;"></span> Summary</dt>
+												<dd>During this job, my role was to find innovative solutions to create new features or improve existing things.<br/>
+												I also set up rules/controls to increase quality of product. This in order to make them more maintainable software and thus cause a decrease in the number of bugs.</dd>
+												<dt><span class="icon-globe" style="float:none;"></span> Company</dt>
+												<dd>Trace Software International<br/>Parc Eco-Normandie<br/>76430 Saint Romain de Colbosc, France</dd>
+											</dl>
+										
+											<dl lang="fr">
+												<dt><span class="icon-code" style="float:none;"></span> Rôles</dt>
+												<dd>
+													Développement de librairies<br/>
+													Gestion de serveurs (WEB, Nagios, Hudson, SQL)<br/>
+													Gestion de l'environnement des développeurs<br/>
+													Gestion de la qualité du code<br/>
+												</dd>
+												
+												<dt><span class="icon-tasks" style="float:none;"></span> Résumer</dt>
+												<dd>Durant cette période, mon rôle a été de trouver des solutions innovantes pour créer de nouvelles fonctionnalités ou optimiser l'existant.<br/>
+												Aussi j'ai mis en place des règles/contrôles afin d'accroitre la qualité du code produit par les développeurs. Ceci dans le but de rendre les logiciels plus maintenables et ainsi entrainer une baisse du nombre de bugs produits.</dd>
+												<dt><span class="icon-globe" style="float:none;"></span> Entreprise</dt>
+												<dd>Trace Software International<br/>Parc Eco-Normandie<br/>76430 Saint Romain de Colbosc, France</dd>
+											</dl>
+										</p>
+									</li>
+									<li>
+										<h5 lang="en">C++ developer</h5>
+										<h5 lang="fr">Développeur C++</h5>
+										<span lang="en" class="label label-info">Traineeship - 2012</span>
+										<span lang="fr" class="label label-info">Stage - 2012</span>
+										<p>
+											<dl lang="en">
+												<dt><span class="icon-code" style="float:none;"></span> Roles</dt>
+												<dd>
+													Improvement of XML management by creation of XSD grammar<br/>
+													Development of a dynamics PDF export<br/>
+													Work with C++ / MFC<br/>
+													3 months<br/>
+												</dd>
+												<dt><span class="icon-globe" style="float:none;"></span> Company</dt>
+												<dd>Trace Software International<br/>Parc Eco-Normandie<br/>76430 Saint Romain de Colbosc, France</dd>
+											</dl>
+											<dl lang="fr">
+												<dt><span class="icon-code" style="float:none;"></span> Rôles</dt>
+												<dd>
+													Amélioration de la gestion des données XML par la création de grammaire XSD <br/>
+													Développement d'un export de PDF dynamique<br/>
+													Développement en C++ / MFC<br/>
+													3 mois<br/>
+												</dd>
+											
+												<dt><span class="icon-globe" style="float:none;"></span> Entreprise</dt>
+												<dd>Trace Software International<br/>Parc Eco-Normandie<br/>76430 Saint Romain de Colbosc, France</dd>
+											</dl>
+										</p>
+									</li>
+									<li>
+										<h5 lang="en">System administrator</h5>
+										<h5 lang="fr">Administrateur système</h5>
+										<span lang="en" class="label label-info">Traineeship - 2010</span>
+										<span lang="fr" class="label label-info">Stage - 2010</span>
+										<p>
+											<dl lang="en">
+												<dt><span class="icon-code" style="float:none;"></span> Roles</dt>
+												<dd>
+													Management of web server (Apache httpd)<br/>
+													Management of mail server (Qmail)<br/>
+													Development of tools for migration of web/mail server<br/>
+													Work with Gentoo and Ubuntu server<br/>
+													10 weeks<br/>
+												</dd>
+												<dt><span class="icon-globe" style="float:none;"></span> Company</dt>
+												<dd>1FoTeam<br/>71, Cours de la République<br/>76600 Le Havre, France</dd>
+											</dl>
+											<dl lang="fr">
+												<dt><span class="icon-code" style="float:none;"></span> Rôles</dt>
+												<dd>
+													Gestion de serveurs Web (Apache httpd)<br/>
+													Gestion de serveurs mail (Qmail)<br/>
+													10 semaines<br/>
+												</dd>
+											
+												<dt><span class="icon-globe" style="float:none;"></span> Entreprise</dt>
+												<dd>1FoTeam<br/>71, Cours de la République<br/>76600 Le Havre, France</dd>
+											</dl>
+										</p>
+									</li>
+									<li>
+										<h5 lang="en">Web developer</h5>
+										<h5 lang="fr">Développeur web</h5>
+										<span lang="en" class="label label-info">Traineeship - 2009</span>
+										<span lang="fr" class="label label-info">Stage - 2009</span>
+										<p>
+											<dl lang="en">
+												<dt><span class="icon-code" style="float:none;"></span> Roles</dt>
+												<dd>
+													Development of application Company management<br/>
+													Development in PHP / Vanilla JS<br/>
+													10 weeks<br/>
+												</dd>
+												<dt><span class="icon-globe" style="float:none;"></span> Company</dt>
+												<dd>1FoTeam<br/>71, Cours de la République<br/>76600 Le Havre, France</dd>
+											</dl>
+											<dl lang="fr">
+												<dt><span class="icon-code" style="float:none;"></span> Rôles</dt>
+												<dd>
+													Développement d'application de gestion d'entreprise<br/>
+													Développement en PHP / Vanilla JS<br/>
+													10 semaines<br/>
+												</dd>
+											
+												<dt><span class="icon-globe" style="float:none;"></span> Entreprise</dt>
+												<dd>1FoTeam<br/>71, Cours de la République<br/>76600 Le Havre, France</dd>
+											</dl>
+										</p>
+									</li>
+								</ul>
+								<h3 lang="en">Education</h3>
+								<h3 lang="fr">Diplômes</h3>
+								<ul class="no-list work">
+									<li>
+										<h5 lang="fr">Master mathématiques et informatique</h5>
+										<h5 lang="en">Master mathematics and computer science</h5>
+										<span class="label label-success">2010 - 2012</span>
+										<p lang="fr">
+											Master Mathématiques et informatique des systèmes complexes et distribués.
+											Spécialisation systèmes informatiques, réseaux et sécurité.
+											Mention Bien, Faculté des Sciences et Techniques, Université du Havre
+										</p>
+										<p lang="en">
+											Master Mathematics and Computer Science Complex and distributed systems.
+											Specialized in computer systems, networks and security.
+											with honors. Faculty of Science and Technology, University of Le Havre
+										</p>
+									</li>
+									<li>
+										<h5 lang="fr">Licence informatique</h5>
+										<h5 lang="en">Licence computer science</h5>
+										<span class="label label-success">2009 - 2010</span>
+										<p lang="fr">
+											Faculté des Sciences et Techniques, Université du Havre.
+										</p>
+										<p lang="en">
+											Faculty of Science and Technology, University of Le Havre.
+										</p>
+									</li>
+									<li>
+										<h5 lang="fr">Diplôme Universitaire de Technologie en Informatique</h5>
+										<h5 lang="en">University Diploma of Technology in Computer Science</h5>
+										<span class="label label-success">2008 - 2009</span>
+										<p lang="fr">
+											Institut Universitaire de Technologie, Le Havre.
+										</p>
+										<p lang="en">
+											University Institute of Technology, Le Havre.
+										</p>
+									</li>
+									<li>
+										<h5 lang="fr">Brevet de Technicien Supérieur en Mécanique et Automatismes Industriels</h5>
+										<h5 lang="en">Higher National Diploma in Mechanical Engineering and Industrial Automation</h5>
+										<span class="label label-success">2006 - 2008</span>
+										<p lang="fr">
+											Lycée R. Schuman, Le Havre.
+										</p>
+										<p lang="en">
+											High School Robert Schuman, Le Havre.
+										</p>
+									</li>
+									<li>
+										<h5 lang="fr">Baccalauréat Sciences et Technologies Industrielles Génie Mécanique</h5>
+										<h5 lang="en">Bachelor  Mechanical Engineering and Industrial Technologies</h5>
+										<span class="label label-success">2003 - 2008</span>
+										<p lang="fr">
+											Option Microtechnique. Mention Bien. Lycée P. de Coubertin, Bolbec.
+										</p>
+										<p lang="en">
+											Microtechnology option. With Honors. High School Pierre de Coubertin, Bolbec.
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="g1">
+								<div class="sidebar">
+									<h3 lang="en">Skills</h3>
+									<h3 lang="fr">Compétences</h3>
+									<h5 lang="en">Language</h5>
+									<h5 lang="fr">Langue</h5>
+									<div class="meter wisteria">
+										<span style="width: 100%">
+										<span lang="en">French</span>
+										<span lang="fr">Français</span>
+										</span>
+									</div>
+									<div class="meter midnight">
+										<span style="width: 75%">
+										<span lang="en">English</span>
+										<span lang="fr">Anglais</span>
+										</span>
+									</div>
+									<h5 lang="en">Programming Language</h5>
+									<h5 lang="fr">Langage de programmation</h5>
+									<div class="meter emerald">
+										<span style="width: 85%"><span>HTML/CSS</span></span>
+									</div>
+									<div class="meter carrot">
+										<span style="width: 90%"><span>PHP</span></span>
+									</div>
+									<div class="meter wisteria">
+										<span style="width: 95%"><span>jQuery/JavaScript</span></span>
+									</div>
+									<div class="meter sunflower">
+										<span style="width: 100%"><span>Java</span></span>
+									</div>
+									<div class="meter asbestos">
+										<span style="width: 82%"><span>Python</span></span>
+									</div>
+									<div class="meter midnight">
+										<span style="width: 19%"><span>OCaml</span></span>
+									</div>
+									<div class="meter pomengrate">
+										<span style="width: 98%"><span>C/C++</span></span>
+									</div>
+									<div class="meter emerald">
+										<span style="width: 95%"><span>SQL</span></span>
+									</div>
+									<div class="meter asbestos">
+										<span style="width: 25%"><span>Lisp</span></span>
+									</div>
+									<div class="break"></div>
+									<h5>IDE</h5>
+									<div class="meter carrot">
+										<span style="width: 90%"><span>Eclipse</span></span>
+									</div>
+									<div class="meter wisteria">
+										<span style="width: 70%"><span>NetBeans</span></span>
+									</div>
+									<div class="meter emerald">
+										<span style="width: 100%"><span>Visual Studio</span></span>
+									</div>
+									<div class="meter sunflower">
+										<span style="width: 70%"><span>Qt Creator</span></span>
+									</div>
+									<div class="break"></div>
+									<h5 lang="en">Databases</h5>
+									<h5 lang="fr">Base de données</h5>
+									<div class="meter emerald">
+										<span style="width: 80%"><span>MySQL / Maria DB</span></span>
+									</div>
+									<div class="meter carrot">
+										<span style="width: 100%"><span>SQLite</span></span>
+									</div>
+									<div class="meter wisteria">
+										<span style="width: 75%"><span>SQLServer</span></span>
+									</div>
+									<div class="meter midnight">
+										<span style="width: 60%"><span>PostGreSQL</span></span>
+									</div>
+									<div class="meter pomengrate">
+										<span style="width: 50%"><span>Voldemort</span></span>
+									</div>
+									<div class="meter sunflower">
+										<span style="width: 55%"><span>MongoDB</span></span>
+									</div>
+									<div class="break"></div>
+									<h5 lang="en">Others skills</h5>
+									<h5 lang="fr">Autres compétences</h5>
+									<dl lang ="fr">
+										<dt><span class="icon-cogs"></span> Analyse</dt>
+										<dd>Merise, UML, Design Patterns, Théorie des graphes</dd>
+										<dt><span class="icon-code-fork"></span> Gestionnaire de source</dt>
+										<dd>Subversion (SVN) , GIT</dd>
+										<dt><span class="icon-linux"></span> Système d'exploitation</dt>
+										<dd>Windows XP/Seven/8, Linux/Unix (Debian et dériver, OpenBSD, etc...)</dd>
+										<dt><span class="icon-sitemap"></span> Administration</dt>
+										<dd>Serveur web, Serveur de monitoring (Nagios), Serveur d’intégration continue (Hudson/jenkins)</dd>
+										<dt><span class="icon-random"></span> Logiciels</dt>
+										<dd>Microsoft office, Open Office, Adobe Photoshop, SolidWorks, PTC Creo, InstallAware</dd>
+									</dl>
+								</div>
+							</div>
+						</section>
+					</div>
+					<!-- End Resume Tab Data -->
+					<!-- production Tab Data -->
+					<div id="production">
+						<span lang="en">
+							<p>
+								Here you can see a little part of my productions. 
+								If you want, you could see more productions <a href="https://github.com/Ducatel/ducatel.github.com/tree/master/Soft">here</a> and <a href="https://github.com/Ducatel">here</a>
+							</p>
+						</span>
+						<span lang="fr">
+							<p>
+								Ici vous pouvez voir une petite partie de mes productions.
+								Si vous voulez, vous pouvez en voir plus <a href="https://github.com/Ducatel/ducatel.github.com/tree/master/Soft">ici</a> et <a href="https://github.com/Ducatel">ici</a>
+							</p>
+						</span>
+						<section class="clearfix">
+							<div class="g2">
+								<b><a href="https://github.com/Ducatel/pyload">
+									<span lang="fr">Développement d'un plugin de debridage de lien pour le logiciel pyload</span>
+									<span lang="en">Development of a plugin in pyload software for unlocking links</span>
+								</a></b>
+								<ul>
+									<li lang="fr">Développé en Python</li>
+									<li lang="en">Developed in Python</li>
+									<li lang="fr">Utilise l'API REST de <a href="http://www.mega-debrid.eu/">mega-debrid</a></li>
+									<li lang="en">Use <a href="http://www.mega-debrid.eu/">mega-debrid</a>  REST API</li>
+									<li lang="fr">Contribution open source</li>
+									<li lang="en">Open source contribution</li>
+								</ul>
+							</div>
+							<div class="g1">
+								<div class="image" style="width:200px;float:right;">
+									<img src="images/pyloadCut.png" alt="TeXloud screenshot"/>
+									<div class="image-overlay">
+										<div class="image-link">
+											<a href="images/pyload.png" class="btn">Full View</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="break"></div>
+							<div class="g2">
+								<b><a href="https://github.com/Ducatel/TeXloud">
+									<span lang="fr">TeXloud - Editeur cloud de document LaTeX</span>
+									<span lang="en">TeXloud - Publisher for LaTeX document in the cloud</span>
+								</a></b>
+								<ul>
+									<li lang="fr">Permet le développement de documents LaTeX sur n'importe quel machine</li>
+									<li lang="en">Allows the development of LaTeX documents on any machines</li>
+									<li lang="fr">Architecture scalable en espace de stockage et en puissance de calcul</li>
+									<li lang="en">Scalable architecture to easily increase storage space and computing power</li>
+									<li lang="fr">Développé en Python pour les parties serveurs distribués</li>
+									<li lang="en">Developed in Python for the distributed servers parts</li>
+									<li lang="fr">Développé en PHP pour la partie serveur HTTP</li>
+									<li lang="en">Developed in PHP for the HTTP server part</li>
+									<li lang="fr">Développé en JQuery, Css3 et HTML5 pour l'interface web</li>
+									<li lang="en">Developed in JQuery, Css3 and HTML5 for the web interface</li>
+									<li lang="fr">Développé en Java pour la partie application android</li>
+									<li lang="en">Developed in Java for the android application part</li>
+								</ul>
+							</div>
+							<div class="g1">
+								<div class="image" style="width:200px;float:right;">
+									<img src="images/texloudCut.png" alt="TeXloud screenshot"/>
+									<div class="image-overlay">
+										<div class="image-link">
+											<a href="images/texloud.png" class="btn">Full View</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="break"></div>
+							<div class="g2">
+								<b><a href="https://github.com/Ducatel/QFacturation">
+									<span lang="fr">Logiciel de facturation pour les petites entreprises</span>
+									<span lang="en">Billing software for small businesses</span>
+								</a></b>
+								<ul>
+									<li lang="fr">Développé en C++/QT</li>
+									<li lang="en">Developed in C++/QT</li>
+									<li lang="fr">Permet à des très petites structure de gérer facilement des devis et des factures</li>
+									<li lang="en">Allows to a very small structure to easily manage quotes and invoices</li>
+									<li lang="fr">Sous licence GNU GPL V3</li>
+									<li lang="en">GNU GPL V3 license</li>
+								</ul>
+							</div>
+							<div class="g1">
+								<div class="image" style="width:200px;float:right;">
+									<img src="images/QFacturationCut.jpg" alt="QFacturation screenshot"/>
+									<div class="image-overlay">
+										<div class="image-link">
+											<a href="images/QFacturation.jpg" class="btn">Full View</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="break"></div>
+						</section>
+					</div>
+					<!-- End production Data -->
+					<!-- Contact Tab Data -->
+					<div id="contact">
+						<section class="clearfix">
+							<div class="g1">
+								<div class="sny-icon-box">
+									<div class="sny-icon">
+										<i class="icon-user"></i>
+									</div>
+									<div class="sny-icon-content">
+										<h4 lang="en">Extra data</h4>
+										<h4 lang="fr">Données supplémentaires</h4>
+										<p lang="en">
+											<span class="icon-male">&nbsp;</span><span name='myAge'> </span> years old<br/>
+											<span class="icon-globe">&nbsp;</span>Near le Havre, France<br/>
+											<span class="icon-fighter-jet">&nbsp;</span>B license, personal car
+										</p>
+										<p lang="fr">
+											<span class="icon-male">&nbsp;</span><span name='myAge'></span> ans<br/>
+											<span class="icon-globe">&nbsp;</span>Près le Havre, France<br/>
+											<span class="icon-fighter-jet">&nbsp;</span>Permis B, véhicule personnel
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="g1">
+								<div class="sny-icon-box">
+									<div class="sny-icon">
+										<i class="icon-envelope"></i>
+									</div>
+									<div class="sny-icon-content">
+										<h4 lang="en">Email Address</h4>
+										<h4 lang="fr">Addresse Email</h4>
+										<p>david.ducatel@yahoo.fr</p>
+									</div>
+								</div>
+							</div>
+							<div class="g1">
+								<div class="sny-icon-box">
+									<div class="sny-icon">
+										<i class="icon-shopping-cart"></i>
+									</div>
+									<div class="sny-icon-content">
+										<h4 lang="en">About Me</h4>
+										<h4 lang="fr">A propos de moi</h4>
+										<p lang="en">I love to work, so don't be shy, you can send me an email.</p>
+										<p lang="fr">J'aime travailler, alors ne soyez pas timide, vous pouvez m'envoyer un e-mail</p>
+									</div>
+								</div>
+							</div>
+							<div class="break"></div>
+						</section>
+					</div>
+					<!-- End Contact Data -->
+				</div>
 			</div>
-			<ul>
-				<li><a href='index.html' id='actif' >Accueil</a></li>
-				<li><a href='formation.html'>Formation</a></li>
-				<li><a href='experience.html'>Exp&eacute;rience</a></li>
-				<li><a href='informatique.html'>Comp&eacute;tences</a></li>
-				<li><a href='production.html'>Production</a></li>
-			</ul>
+			<!-- End Tab Container -->
+			<footer>
+				<p lang="fr">Souvent la moitié de la réponse se trouve dans une question bien posée.</p>
+				<p lang="en">I do not fear computers. I fear the lack of them.</p>
+			</footer>
 		</div>
-		<div id='centre'>
-			<div id='accueil'>
-				<p id='first' style='text-indent:0px;'>
-					Bonjour et bienvenue sur mon site pr&eacute;sentant mon curriculum  vitae. Je m'appelle David Ducatel j'ai actuellement <span id='ageCourantAcc'></span> ans, je suis ing&eacute;nieur en informatique gr&acirc;ce &agrave; mon Master informatique (vous pouvez consulter l'ensemble de mon cursus en suivant ce <a href='formation.html' >lien vers la rubrique Formation</a> ). Poss&eacute;dant une double comp&eacute;tence (informatique et m&eacute;canique via mon BTS M&eacute;canique et Automatismes industriels), je suis capable de m'adapter facilement &agrave; une multitude de situation.
-				</p>
-
-				<p>
-					Au cours de mon cursus et de mon apprentissage autodidacte, j'ai apprit un ensemble de langage qui me permet de travailler facilement sur un grand nombre de domaine diff&eacute;rent. En effet le langage Java SE me permet de d&eacute;velopper des applications lourdes ainsi que le langage C++ qui me permet de faire de m&ecirc;me en cas de contrainte de performance. Aussi ma connaissance du langage PHP, JavaScript, SQL et Java EE me permet de mettre en place n'importe quelle site / logiciel sur un serveur WEB.
-					En sus, ma connaissance dans le logiciel Photoshop me permet de travailler un design soign&eacute; pour mes travaux WEB.
-				</p>
-
-				<p>
-					Form&eacute &agrave; l'utilisation des m&eacute;thodes de conceptions Merise et UML je suis capable d'effectuer la conception d'un logiciel et d'une base de donn&eacute;e.
-				</p>
-
-				<p>
-					Enfin, ayant souvent travaill&eacute; avec un environnement serveur Linux je suis capable d'administrer un serveur Apache, Tomcat, Mysql, PostgreSQL, etc ... Par ailleurs, je suis capable d'automatiser des taches (simple ou complexe) sur un serveur Linux gr&acirc;ce &agrave; ma connaissance du langage Python et des principale commande du Shell Bash.
-				</p>
-
-				<p>
-					Vous pouvez, naturellement, consulter un aper&ccedil;us de mon travail via ce <a href='production.html'>lien vers la rubrique Production</a> o&ugrave; je propose au t&eacute;l&eacute;chargement les sources de diff&eacute;rent  projet auquel je me suis int&eacute;ress&eacute;. Aussi vous pouvez voir l'ensemble de mon exp&eacute;rience professionnel  en suivant ce <a href='experience.html'>lien vers la rubrique Exp&eacute;rience</a>.
-				</p>
-
-				<p>
-					Vous pouvez aussi, bien sur me contacter via cette
-					adresse: <strong style='color:blue;'>david dot ducatel at yahoo dot
-					fr</strong>. Je vous r&eacute;pondrai dans les plus brefs d&eacute;lais.
-				</p>
-
-				<p>
-					Je vous souhaite une bonne visite.
-				</p>
-
-			</div>
-		</div>
-	</body>
+		<!-- #main -->
+	</div>
+	<!-- #main-container -->
+	<input type="hidden" id='currentLang'>
+</body>
 </html>
-

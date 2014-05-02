@@ -1,3 +1,0 @@
-$(function(){
-	$('#ageCourantAcc').html(getAge());
-});
